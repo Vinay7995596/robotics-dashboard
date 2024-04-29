@@ -34,3 +34,19 @@
 }
 
 
+@media all and (max-width: 1023px) {
+  .content-about-section {
+    display: none;
+  }
+
+  .bg-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .arc-bar-app-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+}

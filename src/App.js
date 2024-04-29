@@ -5,15 +5,19 @@ import LineChart from './components/LineChart'
 import ArcCircle from './components/ArcCircle'
 import Battery from './components/BatterStatus'
 import Content from './components/Content'
+import Navbar from './components/Navbar'
 
 const App = () => {
   return (
     <div>
+      <div>
+      <Navbar />
+      </div>
       <div className='bg-container'>
         <div className='linechart-container'>
           <LineChart />
         </div>
-        <div>
+        <div className='content-about-section'>
           <Content />
         </div>
       </div>
