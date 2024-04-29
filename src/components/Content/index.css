@@ -1,0 +1,6 @@
+.continer-content-about {
+    width: 30vw;
+    border: solid black 2px;
+    height: 400px;
+    overflow: scroll;
+}

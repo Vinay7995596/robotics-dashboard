@@ -1,25 +1,44 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.css'
+import BarChart from './components/BarChart'
+import PieChart from './components/PieChart'
+import LineChart from './components/LineChart'
+import ArcCircle from './components/ArcCircle'
+import Battery from './components/BatterStatus'
+import Content from './components/Content'
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <div className='bg-container'>
+        <div className='linechart-container'>
+          <LineChart />
+        </div>
+        <div>
+          <Content />
+        </div>
+      </div>
+      <div className='bg-container'>
+        <div className='bar-charts-container'>
+          <BarChart />
+        </div>
+
+        <div className='pie-charts-container'>
+          <PieChart />
+        </div>
+      </div>
+      <div className='arc-bar-app-container'>
+        <div>
+          <ArcCircle />
+        </div>
+        <div>
+          <Battery />
+        </div>
+        <div>
+          <img src='https://images.techhive.com/images/article/2016/01/thinkstockphotos-511283035-100638943-large.jpg' alt='robo image' className='image-robo' />
+        </div>
+      </div>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
